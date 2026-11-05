@@ -1709,4 +1709,55 @@ body {
     .library-heading h2 {
         font-size: 29px;
     }
+    /* Mobile Responsive Navbar */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 13px;
+        margin: 0;
+        white-space: nowrap;
+    }
+
+}
+
+/* MOBILE RESPONSIVE NAVBAR */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        gap: 18px;
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 10px 5px;
+    }
+
+    .nav-links a {
+        flex-shrink: 0;
+        font-size: 13px;
+    }
+
+    .nav-links::-webkit-scrollbar {
+        display: none;
+    }
 }
