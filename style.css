@@ -1761,3 +1761,80 @@ body {
         display: none;
     }
 }
+
+
+/* NAVBAR DESIGN */
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background: #F5EBDD;
+    gap: 20px;
+}
+
+.logo {
+    color: #211812;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.logo span {
+    color: #A66A42;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #211812;
+    font-size: 15px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #A66A42;
+}
+
+/* MOBILE NAVBAR */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+        padding: 15px 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 20px;
+        width: 100%;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding: 10px;
+        white-space: nowrap;
+    }
+
+    .nav-links a {
+        flex-shrink: 0;
+        font-size: 13px;
+    }
+
+    .nav-links::-webkit-scrollbar {
+        display: none;
+    }
+}
